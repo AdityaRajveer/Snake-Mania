@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+}
+
+.body{
+    background: url(./img/snake-background.jpg);
+    min-height: 100vh;
+    background-size: 120vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#name{
+    position: absolute;
+    top: 12px;
+    left: -5%;
+    font-size: 39px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+img{
+      margin-left: -55%;
+      margin-bottom: -21%; 
+}
+
+#board{
+    position: fixed;
+    background: linear-gradient(rgb(34, 238, 34),rgb(239, 239, 193));
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px solid rgb(3, 53, 3);
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+/* HEAD */
+.head{
+    background-image: url('./img/smiley.jpg');
+    background-size:cover;
+    border: 1px solid rgb(19, 19, 19); 
+    transform: scale(1.02);
+    border-radius: 16px;
+
+}
+
+/* snake */
+.snake{
+    background-image: url('./img/snakebgg.jpg');
+    background-size:cover;
+    border: 1px solid rgb(158, 252, 158); 
+    border-radius: 11px;
+}
+/* FOOD */
+.food{
+    background-image: url('./img/Apple-PNG-Images-removebg-preview.png');
+    background-size:cover;
+    /* border: .25vmin solid black; */
+    border-radius: 14px;
+}
